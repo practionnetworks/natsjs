@@ -21,14 +21,14 @@ type ZoneCreatedData struct {
 	PANNumber           string             `json:"pan_number"`
 	IsBillingEnabled    bool               `json:"is_billing_enabled"`
 	IsUserPortalEnabled bool               `json:"is_user_portal_enabled"`
-	IsActive            bool               `bson:"is_active"`
-	DocVersion          int                `bson:"doc_version"`
-	PermanentAddress    Address            `json:"permanent_address"`
-	CurrentAddress      Address            `json:"current_address"`
-	BillingAddress      Address            `json:"billing_address"`
+	IsActive            bool               `json:"is_active"`
+	DocVersion          int                `json:"doc_version"`
+	PermanentAddress    EventAddress       `json:"permanent_address"`
+	CurrentAddress      EventAddress       `json:"current_address"`
+	BillingAddress      EventAddress       `json:"billing_address"`
 }
 
-type Address struct {
+type EventAddress struct {
 	HouseNumber string `json:"house_number"`
 	Street      string `json:"street"`
 	Address1    string `json:"address1"`
