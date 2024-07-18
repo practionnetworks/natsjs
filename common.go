@@ -5,11 +5,6 @@ import (
 	"github.com/practionnetworks/natsjs/subjects"
 )
 
-
-
-const (
-	Zone = stream.ZoneStream
-)
-
+var ZoneStream = stream.ZoneStream
 
 var ZoneSubject = subjects.GetZoneSubjects()
