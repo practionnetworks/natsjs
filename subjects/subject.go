@@ -19,9 +19,9 @@ func GetZoneSubjects() []string {
 
 const (
 	// Zone
-	UserCreated Subject = "zone:created"
-	UserUpdated Subject = "zone:updated"
-	UserDeleted Subject = "zone:deleted"
+	UserCreated Subject = "User:created"
+	UserUpdated Subject = "User:updated"
+	UserDeleted Subject = "User:deleted"
 )
 
 func GetUserSubjects() []string {
