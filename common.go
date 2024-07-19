@@ -8,3 +8,7 @@ import (
 var ZoneStream = stream.ZoneStream
 
 var ZoneSubject = subjects.GetZoneSubjects()
+
+var UserStream = stream.UserStream
+
+var UserSubject = subjects.GetUserSubjects()
